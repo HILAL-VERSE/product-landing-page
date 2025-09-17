@@ -290,9 +290,9 @@ nav ul li a {
         }
 
         .image-container img{
-            width: 200px !important;
-            height: 188px !important;    
-            visibility: visible !important; 
+            width: 200px;
+            height: 188px;    
+            visibility: visible; 
         }
 
         .product-details{
