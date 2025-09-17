@@ -113,17 +113,20 @@ nav ul li a {
 
 .org-circle{
     width: 100%;
+    height: fit-content;
     align-items: center;
     justify-content: center;
+    visibility: visible;
 }
 
 
 .back-circle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 1700px;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin-top: 1700px !important;
+    visibility: visible !important;
 }
 
 
@@ -193,15 +196,18 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: visible;
 }
 
 .black-back{
-   align-items: center;
+   align-items: center !important;
+   visibility: visible !important;
 }
 
 .orange-front{
-    position: absolute;
-    transform: rotate(-90deg);
+    position: absolute !important;
+    transform: rotate(-90deg) !important;
+    visibility: visible !important;
 }
 
 #about-section p{
@@ -280,11 +286,13 @@ nav ul li a {
             background-color: white;
             border-radius: 15px;
             overflow: hidden;
+            visibility: visible;
         }
 
         .image-container img{
-            width: 200px;
-            height: 188px;     
+            width: 200px !important;
+            height: 188px !important;    
+            visibility: visible !important; 
         }
 
         .product-details{
