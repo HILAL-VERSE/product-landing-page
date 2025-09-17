@@ -9,8 +9,9 @@
         height: fit-content;
         width: fit-content;
         right: 120px;
-        top: 60px;
+        top: 10px;
         border-radius: 10px;
+        align-items: start;
     }
 
     nav ul {
@@ -76,44 +77,94 @@
 
 
 @media(max-width: 480px) {
+    .org-circle{
+        display: block;
+        position: absolute;
+        top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
     .menu-img{
         display: block;
         width: 36px;
         height: 36px;
+        position: fixed;
+        z-index: 2;
     }
 
     #navigation-section{
+        position: fixed;
         height: fit-content;
         width: fit-content;
-        right: 120px;
-        top: 60px;
+        left: 20px;
+        top: -10px;
         border-radius: 10px;
+        z-index: 3;
     }
 
     nav ul {
         flex-direction: column;
         display: none;
-        width: 500px;
+        width: 170px;
         height: 200px;
-        padding: 40px;
-        align-items: end;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        align-items: start;
         justify-content: end;
-        text-align: right;
+        text-align: left;
         line-height: 55px;
         
     }
 
-    nav ul a{
+    
+
+    nav ul li a{
         background: linear-gradient(to right,
        rgba(244, 92, 36, 0.3) 0%, /* Low opacity orange */
        rgba(244, 128, 36, 0) 100%  /* Fully transparent at the end */);
-        width: 700px;
+        width: 500px;
         padding-left: 15px;
+        font-size: 22px;
+    }
+
+    #home-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #home-section h1{
-    font-size: 260px;
+    font-size: 100px;
+    position: absolute;
+    top: 20px;
    }
+
+   #home-section img{
+    position: absolute;
+    margin-top: 200px;
+    height: auto;
+    width: 500px;
+    height: 488px;
+}
+
+ #home-section img:hover{
+    width: 600px;
+    height: 588px;
+} 
+
+.testimonial-container-set{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-containers{
+    display: flexs;
+    flex-direction: column;
+}
 
 .testimonial-box{
     background-color: white;
@@ -121,26 +172,131 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 260px;
-    height: 270px;
-    border-radius: 32px;
+    width: 200px;
+    height: 210px;
+    border-radius: 24px;
     padding: 10px;
 }
 
-.three{
-    display: none;
-}
-
-.three-three{
-    display: none;
-}
-
-.pdthree{
-    display: none;
+#testimonials-section{
+    padding-top: 0px;
+    margin-top: 0px;
+    justify-content: start;
+    align-items: center;
 }
 
 
+#testimonials-section h2{
+    font-size: 27px;
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+.testimonial-profile{
+    width: 40px;
+    height: 40px;
+}
+
+.testimonial-box p{
+    font-size: 11px;
+}
+
+
+#about-section h2{
+    font-size: 27px;
+    padding-top: 80px;
+    padding-left: 100px;
+}
+
+.about-img{
+    padding-top: 10px;
+}
+
+.black-back{
+   align-items: center;
+   height: 300px;
+   width: 288px;
+}
+
+.orange-front{
+    position: absolute;
+    transform: rotate(-90deg);
+    height: 300px;
+   width: 288px;
+}
+
+#about-section p{
+    font-size: 12px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#products-section h2{
+    font-size: 27px;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.products-main-boxs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    flex-direction: column;
+    gap: 20px;
     
+}
 
+ .products-main-box{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+.product-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            width: 210px;
+            height: 260px;
+            border-radius: 15px;
+            padding: 7px;
+            padding-top: 10px;
+}
+
+   .product-box-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ff3b00;
+            width: 210px;
+            height: 260px;
+            border-radius: 15px;
+            padding: 7px;
+            padding-top: 10px;
+        }
+
+        .image-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 160px;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+        } 
+        
+        .image-container img{
+            width: 150px;
+            height: 138px;     
+        }
+    
 }
 
